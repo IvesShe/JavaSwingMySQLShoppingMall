@@ -1,4 +1,4 @@
-# Java Swing 搭配MySQL 建立簡易商城系統
+# Java Swing jdbc搭配MySQL 建立簡易商城系統
 
 ## 使用技術
 - java jdk11
@@ -6,6 +6,7 @@
 - MySQL 8.0.41
 - eclipse windowbuilder
 - dao pattern
+- jdbc
 
 # 使用方式
 
