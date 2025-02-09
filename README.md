@@ -52,6 +52,10 @@ java -jar OrderAppV400.jar
 
 ![image](./images/20250209120240.jpg)
 
+# 登入失敗畫面
+
+![image](./images/20250209130117.jpg)
+
 # 訂單主頁
 
 ![image](./images/20250209120324.jpg)
