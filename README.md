@@ -1,4 +1,4 @@
-# JavaSwingMySQLShoppingMall
+# Java Swing 搭配MySQL 建立簡易商城系統
 
 ## 使用技術
 - java jdk11
@@ -12,7 +12,10 @@
 ## 前置條件
 
 - 安裝mysql8.0.41
+[MySQL Community Downloads](https://dev.mysql.com/downloads/installer/)
+
 - 安裝jdk11
+[jdk-11.0.25_windows-x64_bin](https://github.com/IvesShe/JavaSwingMySQLShoppingMall/blob/main/jdk-11.0.25_windows-x64_bin.exe)
 
 ## 下載本專案對應檔案
 
@@ -21,6 +24,8 @@
 ![image](./images/20250209123204.jpg)
 
 下載OrderAppV400.jar
+
+[OrderAppV400.jar](https://github.com/IvesShe/JavaSwingMySQLShoppingMall/blob/main/OrderAppV400.jar)
 
 ![image](./images/20250209123255.jpg)
 
