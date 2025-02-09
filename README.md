@@ -19,7 +19,7 @@
 
 ## 下載本專案對應檔案
 
-下載SQL import數據庫及表格
+下載SQL import數據庫及表格，在sql資料夾
 
 ![image](./images/20250209123204.jpg)
 
@@ -29,6 +29,8 @@
 
 ![image](./images/20250209123255.jpg)
 
+![image](./images/20250209125229.jpg)
+
 windows環境直接雙擊OrderAppV400.jar，即可執行
 
 mac環境要開啟終端機，輸入
@@ -37,7 +39,7 @@ mac環境要開啟終端機，輸入
 java -jar OrderAppV400.jar
 ```
 
-原始碼在src，僅供參考
+原始碼在src資料夾，僅供參考
 
 # 登入畫面
 
