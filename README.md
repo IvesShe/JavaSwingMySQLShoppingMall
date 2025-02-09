@@ -15,7 +15,7 @@
 [MySQL Community Downloads](https://dev.mysql.com/downloads/installer/)
 
 - 安裝jdk11
-[jdk-11.0.25_windows-x64_bin](https://github.com/IvesShe/JavaSwingMySQLShoppingMall/blob/main/jdk-11.0.25_windows-x64_bin.exe)
+[jdk-11.0.25_windows-x64_bin](https://www.oracle.com/tw/java/technologies/javase/jdk11-archive-downloads.html)
 
 ## 下載本專案對應檔案
 
