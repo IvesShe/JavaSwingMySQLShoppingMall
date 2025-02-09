@@ -1,0 +1,57 @@
+CREATE DATABASE  IF NOT EXISTS `shopping_mall` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `shopping_mall`;
+-- MySQL dump 10.13  Distrib 8.0.41, for Win64 (x86_64)
+--
+-- Host: localhost    Database: shopping_mall
+-- ------------------------------------------------------
+-- Server version	8.0.41
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `shop_order`
+--
+
+DROP TABLE IF EXISTS `shop_order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `shop_order` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `meal1` varchar(45) DEFAULT NULL,
+  `meal2` varchar(45) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `shop_order`
+--
+
+LOCK TABLES `shop_order` WRITE;
+/*!40000 ALTER TABLE `shop_order` DISABLE KEYS */;
+INSERT INTO `shop_order` VALUES (2,'bb','2','5','2025-02-07 02:30:30','2025-02-07 11:40:53'),(3,'aa','81','7','2025-02-07 02:30:30','2025-02-07 02:46:40'),(5,'alice','20','36','2025-02-07 02:30:30','2025-02-07 02:30:30'),(6,'kk','33','4','2025-02-07 02:48:02','2025-02-07 14:39:00'),(8,'bb','6','8','2025-02-07 02:48:02','2025-02-07 02:48:02'),(9,'aa','3','5','2025-02-07 02:48:02','2025-02-09 03:28:22'),(12,'kk','3','3','2025-02-07 11:33:02','2025-02-07 11:33:02'),(13,'kk','2','7','2025-02-07 11:35:25','2025-02-07 14:39:00'),(14,'kk','5','7','2025-02-07 11:35:41','2025-02-07 11:35:41'),(15,'ives','8','8','2025-02-07 12:17:10','2025-02-07 14:34:53'),(18,'ives','3','3','2025-02-07 12:21:15','2025-02-07 15:14:14'),(19,'ives','13','8','2025-02-07 12:21:32','2025-02-07 14:34:53'),(20,'amy','3','4','2025-02-07 14:48:50','2025-02-07 14:48:50'),(21,'jolin','3','6','2025-02-07 14:49:15','2025-02-07 14:49:15'),(22,'brain','4','5','2025-02-07 14:49:37','2025-02-07 14:50:12'),(23,'ives','7','5','2025-02-07 14:58:18','2025-02-09 02:55:26'),(24,'ives','2','2','2025-02-07 15:14:03','2025-02-07 15:14:03'),(25,'admin','1','3','2025-02-09 03:20:04','2025-02-09 03:20:04'),(26,'admin','5','3','2025-02-09 03:20:12','2025-02-09 03:20:12'),(27,'admin','3','3','2025-02-09 03:20:35','2025-02-09 03:20:35'),(28,'admin','7','3','2025-02-09 03:20:39','2025-02-09 03:20:39'),(29,'admin','7','3','2025-02-09 03:20:43','2025-02-09 03:20:43'),(31,'kk','3','6','2025-02-09 03:24:22','2025-02-09 03:26:36'),(32,'admin','1','2','2025-02-09 03:25:54','2025-02-09 03:25:54'),(33,'aa','3','4','2025-02-09 03:27:45','2025-02-09 03:27:45'),(34,'aa','8','4','2025-02-09 03:27:51','2025-02-09 03:27:51'),(35,'bb','2','3','2025-02-09 03:32:39','2025-02-09 03:32:39'),(36,'admin','1','4','2025-02-09 03:33:01','2025-02-09 03:33:01');
+/*!40000 ALTER TABLE `shop_order` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-02-09 11:52:15
