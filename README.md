@@ -95,11 +95,6 @@ java -jar OrderAppV400.jar
 
 ![image](./images/20250209120701.jpg)
 
-
-# 其它專案
-
-## [CocosCreatorDemo](https://github.com/IvesShe/CocosCreatorDemo)
-
 # Model
 
 ## Member
