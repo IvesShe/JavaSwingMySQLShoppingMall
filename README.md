@@ -40,8 +40,6 @@ mac環境要開啟終端機，輸入
 java -jar OrderAppV400.jar
 ```
 
-原始碼在src資料夾，僅供參考
-
 # 登入畫面
 
 一般帳號只能查到自己的訂單, admin帳號可以查到所有的訂單(帳號admin,密碼123)
@@ -96,7 +94,7 @@ java -jar OrderAppV400.jar
 ![image](./images/20250209120701.jpg)
 
 # Model
-
+<h3> 原始碼在src資料夾，僅供參考</h1>
 ## Member
 
 ```java
