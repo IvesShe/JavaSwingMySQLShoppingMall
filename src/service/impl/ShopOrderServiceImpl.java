@@ -56,18 +56,18 @@ public class ShopOrderServiceImpl implements ShopOrderService{
 	@Override
 	public String AllShopOrder() {
 		List<ShopOrder> allShopOrder = shopOrderDaoImpl.selectAll();
-		String show="";
-		for(ShopOrder shopOrder:allShopOrder)
-		{
-//			import java.text.NumberFormat;
-//			import java.util.Locale;
+		StringBuilder show = new StringBuilder();
+		
+		allShopOrder
+		.stream()
+		.forEach((shopOrder)->{
 			int sum = shopOrder.getMealNo1() * ShopOrder.getMealNo1Price() +
 			          shopOrder.getMealNo2() * ShopOrder.getMealNo2Price();
 
 			NumberFormat currencyFormat = NumberFormat.getNumberInstance(Locale.TAIWAN); // 使用千分位格式
 			String formattedSum = currencyFormat.format(sum); // 轉換總價
 
-			show += String.format(
+			show.append(String.format(
 			    "訂單編號：%-5d 客戶姓名：%-14s  1號餐：%3d 份  2號餐：%3d 份  總價：%10s 元  更新時間：%s  建立時間：%s%n",
 			    shopOrder.getId(),
 			    shopOrder.getName(),
@@ -76,9 +76,9 @@ public class ShopOrderServiceImpl implements ShopOrderService{
 			    formattedSum,  // 加入逗號格式的總價			    
 			    Tool.formatTimestamp(shopOrder.getUpdatedAt()),
 			    Tool.formatTimestamp(shopOrder.getCreatedAt())
-			);
-		}
-		return show;
+			));
+		});
+		return show+"";
 	}
 
 	@Override
