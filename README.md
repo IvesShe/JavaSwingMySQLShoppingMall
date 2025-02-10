@@ -97,7 +97,7 @@ java -jar OrderAppV400.jar
 
 # 其它專案
 
-[JavaSwingIOStringShoppingMallJava Swing 搭配IO Stream 建立簡易商城系統](https://github.com/IvesShe/JavaSwingIOStringShoppingMall)
+[Java Swing 搭配IO Stream 建立簡易商城系統](https://github.com/IvesShe/JavaSwingIOStringShoppingMall)
 
 # Model
 
