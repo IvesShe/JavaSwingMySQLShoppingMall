@@ -68,7 +68,7 @@ public class ShopOrderServiceImpl implements ShopOrderService{
 			String formattedSum = currencyFormat.format(sum); // 轉換總價
 
 			show.append(String.format(
-			    "訂單編號：%-5d 客戶姓名：%-14s  1號餐：%3d 份  2號餐：%3d 份  總價：%10s 元  更新時間：%s  建立時間：%s%n",
+			    "訂單編號：%-5d 客戶帳號：%-14s  1號餐：%3d 份  2號餐：%3d 份  總價：%10s 元  更新時間：%s  建立時間：%s%n",
 			    shopOrder.getId(),
 			    shopOrder.getName(),
 			    shopOrder.getMealNo1(),
@@ -127,6 +127,7 @@ public class ShopOrderServiceImpl implements ShopOrderService{
 
 	@Override
 	public String findByUsername(String Username) {
+		System.out.println(Username);
 		List<ShopOrder> allShopOrder = shopOrderDaoImpl.selectByUsername(Username);
 		String show="";
 		for(ShopOrder shopOrder:allShopOrder)
@@ -140,7 +141,7 @@ public class ShopOrderServiceImpl implements ShopOrderService{
 			String formattedSum = currencyFormat.format(sum); // 轉換總價
 
 			show += String.format(
-			    "訂單編號：%-5d 客戶姓名：%-14s  1號餐：%3d 份  2號餐：%3d 份  總價：%10s 元  更新時間：%s  建立時間：%s%n",
+			    "訂單編號：%-5d 客戶帳號：%-14s  1號餐：%3d 份  2號餐：%3d 份  總價：%10s 元  更新時間：%s  建立時間：%s%n",
 			    shopOrder.getId(),
 			    shopOrder.getName(),
 			    shopOrder.getMealNo1(),

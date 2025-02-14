@@ -430,7 +430,7 @@ public class AddShopOrderUI extends JFrame {
 					return;
 				}
 				
-				String name = member.getName();
+				String name = member.getUsername();
 				
 				
 				int meal1 = Integer.parseInt(textFieldMeal1.getText());
